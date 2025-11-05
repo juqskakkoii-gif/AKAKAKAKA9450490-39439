@@ -33,7 +33,7 @@ local OrionLib = {
 			TextDark = Color3.fromRGB(150, 180, 230) -- Azul bebê amarelado para texto secundário
 		}
 	},
-	SelectedTheme = "Vertex",
+	SelectedTheme = "Bliz_T",
 	Folder = nil,
 	SaveCfg = false
 }
@@ -63,7 +63,7 @@ local Orion = Instance.new("ScreenGui")
 
 local FocusDrag = nil
 
-Orion.Name = "Vertex"
+Orion.Name = "OrionBliz"
 
 getgenv().gethui = function() return game.CoreGui end
 
@@ -304,7 +304,7 @@ end
 
 CreateElement("Corner", function(Scale, Offset)
 	local Corner = Create("UICorner", {
-		CornerRadius = UDim.new(Scale or 20, Offset or 10)
+		CornerRadius = UDim.new(Scale or 30, Offset or 10)
 	})
 	return Corner
 end)
@@ -2235,7 +2235,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					Visible = false,
 					Image = "rbxassetid://4155801252"
 				}, {
-					Create("UICorner", {CornerRadius = UDim.new(0, 5)}),
+					Create("UICorner", {CornerRadius = UDim.new(10, 20)}),
 					ColorSelection
 				})
 
